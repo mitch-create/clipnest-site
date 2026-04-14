@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ClipNest Support</title>
+    <meta name="description" content="Support and contact information for ClipNest.">
+    <link rel="icon" type="image/png" href="assets/favicon-64.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site-shell">
+        <div class="topbar">
+            <div class="container">
+                <nav class="nav" aria-label="Main navigation">
+                    <a class="brand" href="index.html">
+                        <img src="assets/clipnest-logo.png" alt="ClipNest logo">
+                        <span class="brand-text">
+                            <strong>ClipNest</strong>
+                            <span>Windows clipboard history with optional Google sync</span>
+                        </span>
+                    </a>
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a href="privacy.html">Privacy</a>
+                        <a class="active" href="support.html">Support</a>
+                        <a href="terms.html">Terms</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <main>
+            <section class="page-hero">
+                <div class="container">
+                    <div class="eyebrow">ClipNest Support</div>
+                    <h1>Support and contact</h1>
+                    <p>
+                        Need help with sync, setup, or privacy questions? Use the details below when contacting support so issues can be reproduced faster.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container support-grid">
+                    <div class="panel">
+                        <h2 style="margin-top:0;">Contact</h2>
+                        <p>Email: <a href="mailto:ethanmiller122804@gmail.com">ethanmiller122804@gmail.com</a></p>
+                        <p class="legal-note">Use this same email for your Google OAuth support contact so the public site and consent screen match.</p>
+
+                        <h3>Include these details in bug reports</h3>
+                        <ul>
+                            <li>what you copied or tried to do</li>
+                            <li>whether Google sync was enabled</li>
+                            <li>whether the problem happened on one device or more than one</li>
+                            <li>the exact status text shown in ClipNest Settings</li>
+                            <li>whether the item was text, rich text, image, or file list</li>
+                        </ul>
+                    </div>
+
+                    <div class="panel">
+                        <h2 style="margin-top:0;">Current product details</h2>
+                        <ul>
+                            <li>Platform: Windows desktop</li>
+                            <li>Storage model: local-first</li>
+                            <li>Sync provider: Google Drive app data folder</li>
+                            <li>ClipNest-operated clipboard server: none</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2>Common questions</h2>
+                        <p>Short answers to the issues most likely to come up during setup and daily use.</p>
+                    </div>
+
+                    <div class="feature-grid">
+                        <div class="card">
+                            <h3>Why does sync take a few seconds?</h3>
+                            <p>
+                                ClipNest syncs through Google Drive app data, not a realtime push backend. Local capture happens first,
+                                then ClipNest syncs eligible changes in the background.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Why did a copied file list not appear on another PC?</h3>
+                            <p>
+                                File lists can be device-specific because the target paths may only exist on the machine where they were copied.
+                                Those entries may remain local-only.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Can I use ClipNest without Google?</h3>
+                            <p>Yes. Google sign-in is optional. ClipNest works as a local clipboard manager without any account.</p>
+                        </div>
+                        <div class="card">
+                            <h3>What should I do before copying sensitive data?</h3>
+                            <p>
+                                Pause capture first. ClipNest does not currently auto-exclude password managers or other sensitive apps.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3>Where is the local data stored?</h3>
+                            <p>ClipNest stores history, settings, and related files under your Windows local app data folder.</p>
+                        </div>
+                        <div class="card">
+                            <h3>What if Google sign-in fails?</h3>
+                            <p>
+                                Open ClipNest Settings and note the exact sync status text. Include that message in your support request.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-grid footer-card">
+                <div>
+                    <div class="brand">
+                        <img src="assets/clipnest-logo.png" alt="ClipNest logo">
+                        <span class="brand-text">
+                            <strong>ClipNest</strong>
+                            <span>Clipboard history for Windows</span>
+                        </span>
+                    </div>
+                    <p class="small-note" style="margin-top:0.9rem;">
+                        Local-first clipboard history with optional Google sync through your own Google Drive app data folder.
+                    </p>
+                </div>
+                <div>
+                    <h3>Pages</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="mailto:ethanmiller122804@gmail.com">ethanmiller122804@gmail.com</a></li>
+                    </ul>
+                    <p class="legal-note">Use this same email for your Google OAuth support contact so the public site and consent screen match.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

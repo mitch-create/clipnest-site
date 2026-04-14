@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ClipNest Privacy Policy</title>
+    <meta name="description" content="ClipNest Privacy Policy for the Windows clipboard history app with optional Google sync.">
+    <link rel="icon" type="image/png" href="assets/favicon-64.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="site-shell">
+        <div class="topbar">
+            <div class="container">
+                <nav class="nav" aria-label="Main navigation">
+                    <a class="brand" href="index.html">
+                        <img src="assets/clipnest-logo.png" alt="ClipNest logo">
+                        <span class="brand-text">
+                            <strong>ClipNest</strong>
+                            <span>Windows clipboard history with optional Google sync</span>
+                        </span>
+                    </a>
+                    <div class="nav-links">
+                        <a href="index.html">Home</a>
+                        <a class="active" href="privacy.html">Privacy</a>
+                        <a href="support.html">Support</a>
+                        <a href="terms.html">Terms</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <main>
+            <section class="page-hero">
+                <div class="container">
+                    <div class="eyebrow">ClipNest Privacy Policy</div>
+                    <h1>Privacy Policy</h1>
+                    <p>Last updated: April 14, 2026</p>
+                    <p>
+                        ClipNest stores clipboard history so you can search and reuse copied items later. Clipboard history can include
+                        sensitive information. This policy explains what ClipNest stores, how optional Google sync works, and what controls
+                        you have inside the app.
+                    </p>
+                </div>
+            </section>
+
+            <section class="container document-layout">
+                <aside class="toc" aria-label="Privacy policy contents">
+                    <h3>On this page</h3>
+                    <a href="#sensitive">Sensitive clipboard data</a>
+                    <a href="#collect">What ClipNest stores</a>
+                    <a href="#local">Local storage</a>
+                    <a href="#google">Google sync</a>
+                    <a href="#not-do">What ClipNest does not do</a>
+                    <a href="#startup">Startup integration</a>
+                    <a href="#controls">Your controls</a>
+                    <a href="#retention">Retention and deletion</a>
+                    <a href="#contact">Contact</a>
+                </aside>
+
+                <div>
+                    <article class="doc-card" id="sensitive">
+                        <h2>Clipboard history can contain sensitive data</h2>
+                        <p>
+                            ClipNest may store passwords, one-time codes, payment details, health information, work documents,
+                            screenshots, and private messages if they are copied to the clipboard.
+                        </p>
+                        <p>
+                            ClipNest does not currently auto-exclude password managers or other sensitive apps. If you copy passwords,
+                            security codes, payment details, or regulated data, pause capture first and clear history afterward if needed.
+                        </p>
+                    </article>
+
+                    <article class="doc-card" id="collect">
+                        <h2>What ClipNest stores</h2>
+                        <p>Depending on what you copy and which features you enable, ClipNest may store:</p>
+                        <ul>
+                            <li>plain text</li>
+                            <li>rich text / HTML</li>
+                            <li>copied file lists</li>
+                            <li>image thumbnails and saved image files</li>
+                            <li>app settings</li>
+                            <li>connected Google account metadata and protected refresh tokens used for sync</li>
+                        </ul>
+                    </article>
+
+                    <article class="doc-card" id="local">
+                        <h2>How local storage works</h2>
+                        <p>ClipNest stores clipboard history locally on your Windows device. Current local storage paths include:</p>
+                        <ul>
+                            <li><code>%LocalAppData%\ClipNest\history.json</code></li>
+                            <li><code>%LocalAppData%\ClipNest\Images\</code></li>
+                            <li><code>%LocalAppData%\ClipNest\settings.json</code></li>
+                            <li><code>%LocalAppData%\ClipNest\Accounts\</code></li>
+                        </ul>
+                    </article>
+
+                    <article class="doc-card" id="google">
+                        <h2>How Google sync works</h2>
+                        <p>
+                            If you choose to sign in with Google, ClipNest uses your Google Drive app data folder to sync eligible clipboard
+                            history between devices running ClipNest with the same Google account.
+                        </p>
+                        <p>Google sync currently includes:</p>
+                        <ul>
+                            <li>plain text</li>
+                            <li>rich text / HTML</li>
+                            <li>pinned state</li>
+                            <li>image files used by synced entries</li>
+                        </ul>
+                        <p>
+                            Copied file lists are device-specific and may remain local-only because those paths may not exist on another device.
+                        </p>
+                        <p>
+                            Removing a Google account from ClipNest on one device removes the local saved account for that install. It does not
+                            automatically delete synced data already stored in that Google account's Drive app data folder.
+                        </p>
+                    </article>
+
+                    <article class="doc-card" id="not-do">
+                        <h2>What ClipNest does not do</h2>
+                        <p>ClipNest does not upload clipboard contents to a ClipNest-operated server.</p>
+                        <p>Google sync is optional. You can use ClipNest locally without signing in.</p>
+                    </article>
+
+                    <article class="doc-card" id="startup">
+                        <h2>Startup and system integration</h2>
+                        <p>
+                            If you enable Run on Startup, ClipNest uses the Windows startup mechanism available for your install type.
+                            Packaged MSIX installs request a Windows startup task. Classic installs use a per-user startup entry under
+                            <code>HKCU\Software\Microsoft\Windows\CurrentVersion\Run</code>.
+                        </p>
+                    </article>
+
+                    <article class="doc-card" id="controls">
+                        <h2>Your controls</h2>
+                        <p>You can:</p>
+                        <ul>
+                            <li>pause clipboard capture</li>
+                            <li>delete individual entries</li>
+                            <li>clear unpinned history or all history</li>
+                            <li>remove a connected Google account from the device</li>
+                            <li>turn off Run on Startup</li>
+                        </ul>
+                    </article>
+
+                    <article class="doc-card" id="retention">
+                        <h2>Retention and deletion</h2>
+                        <p>
+                            Clipboard items remain in local history until you delete them, clear history, or ClipNest removes older unpinned items
+                            to stay within its local history and storage limits.
+                        </p>
+                        <p>
+                            When Google sync is enabled, synced item records may remain in your Google account until they are removed by the app's
+                            sync process or you remove the associated app data from your Google account.
+                        </p>
+                    </article>
+
+                    <article class="doc-card" id="contact">
+                        <h2>Contact</h2>
+                        <p>For support or privacy questions, contact <a href="mailto:ethanmiller122804@gmail.com">ethanmiller122804@gmail.com</a>.</p>
+                        <p class="legal-note">Use this same contact email on your Google OAuth consent screen so the public site and Google app stay aligned.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container footer-grid footer-card">
+                <div>
+                    <div class="brand">
+                        <img src="assets/clipnest-logo.png" alt="ClipNest logo">
+                        <span class="brand-text">
+                            <strong>ClipNest</strong>
+                            <span>Clipboard history for Windows</span>
+                        </span>
+                    </div>
+                    <p class="small-note" style="margin-top:0.9rem;">
+                        Local-first clipboard history with optional Google sync through your own Google Drive app data folder.
+                    </p>
+                </div>
+                <div>
+                    <h3>Pages</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="support.html">Support</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="mailto:ethanmiller122804@gmail.com">ethanmiller122804@gmail.com</a></li>
+                    </ul>
+                    <p class="legal-note">Use this same contact email on your Google OAuth consent screen so the public site and Google app stay aligned.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

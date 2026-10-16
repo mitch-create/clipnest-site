@@ -1,201 +1,73 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ClipNest Privacy Policy</title>
-    <meta name="description" content="ClipNest Privacy Policy for the Windows clipboard history app with optional Google sync.">
+    <title>Privacy policy | ClipNest</title>
+    <meta name="description" content="What ClipNest stores, where it stores it on your PC, and the controls you have. ClipNest is local-only: no accounts, no upload, no telemetry.">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0d1113" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" href="assets/favicon-64.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="site-shell">
-        <div class="topbar">
-            <div class="container">
-                <nav class="nav" aria-label="Main navigation">
-                    <a class="brand" href="index.html">
-                        <img src="assets/clipnest-logo.png" alt="ClipNest logo">
-                        <span class="brand-text">
-                            <strong>ClipNest</strong>
-                            <span>Windows clipboard history with optional Google sync</span>
-                        </span>
-                    </a>
-                    <div class="nav-links">
-                        <a href="index.html">Home</a>
-                        <a class="active" href="privacy.html">Privacy</a>
-                        <a href="support.html">Support</a>
-                        <a href="terms.html">Terms</a>
-                    </div>
-                </nav>
-            </div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4.5-4.5M12 15l-4.5-4.5M5 19.5h14"/></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="m14 4 6 6-3 1-4 4-1 5-3-3-4 4-1-1 4-4-3-3 5-1 4-4z"/></symbol><symbol id="i-trash" viewBox="0 0 24 24"><path d="M5 7h14M10 7V5h4v2M7 7l1 12h8l1-12"/></symbol><symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2.8v2.6M12 18.6v2.6M2.8 12h2.6M18.6 12h2.6M5.5 5.5l1.8 1.8M16.7 16.7l1.8 1.8M5.5 18.5l1.8-1.8M16.7 7.3l1.8-1.8"/></symbol><symbol id="i-min" viewBox="0 0 24 24"><path d="M7 12h10"/></symbol><symbol id="i-max" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1"/></symbol><symbol id="i-x" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7 7 17"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-file" viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></symbol><symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m5 18 5-5 3 3 2-2 4 4"/></symbol><symbol id="i-text" viewBox="0 0 24 24"><path d="M5 6h14M12 6v13M9 19h6"/></symbol><symbol id="i-rich" viewBox="0 0 24 24"><path d="M7 5h5.5a3.5 3.5 0 0 1 0 7H7zM7 12h6.5a3.5 3.5 0 0 1 0 7H7z"/></symbol><symbol id="i-tag" viewBox="0 0 24 24"><path d="M3.5 12.5V4.5a1 1 0 0 1 1-1h8l8.5 8.5-9 9z"/><circle cx="8" cy="8" r="1.3"/></symbol><symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3.5l1.8 5.2 5.2 1.8-5.2 1.8-1.8 5.2-1.8-5.2-5.2-1.8 5.2-1.8zM18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></symbol><symbol id="i-tray" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 15h5l1.5 2h5L16 15h5"/></symbol><symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5 2.5 20h19z"/><path d="M12 10v4.5M12 17.2v.1"/></symbol><symbol id="i-copy" viewBox="0 0 24 24"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v9.5a1 1 0 0 0 1 1h3.5"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></symbol><symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></symbol><symbol id="i-keyboard" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2"/><path d="M6.5 10h.01M10 10h.01M14 10h.01M17.5 10h.01M7.5 14h9"/></symbol></svg>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="wordmark" href="index.html" aria-label="ClipNest home"><img src="assets/clipnest-logo.png" alt="" width="32" height="32"><span>ClipNest</span></a>
+            <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open menu</span><span class="bars" aria-hidden="true"><span></span><span></span><span></span></span></button>
+            <nav class="site-nav" id="site-nav" aria-label="Main">
+                <a href="index.html#features">Features</a>
+                <a href="privacy.html" aria-current="page">Privacy</a>
+                <a href="support.html">Support</a>
+                <a class="nav-download" href="index.html#download">Download</a>
+            </nav>
         </div>
+    </header>
 
-        <main>
-            <section class="page-hero">
-                <div class="container">
-                    <div class="eyebrow">ClipNest Privacy Policy</div>
-                    <h1>Privacy Policy</h1>
-                    <p>Last updated: April 14, 2026</p>
-                    <p>
-                        ClipNest stores clipboard history so you can search and reuse copied items later. Clipboard history can include
-                        sensitive information. This policy explains what ClipNest stores, how optional Google sync works, and what controls
-                        you have inside the app.
-                    </p>
-                </div>
-            </section>
+    <main id="main">
+        <section class="page-hero">
+            <div class="wrap">
+                <p class="eyebrow">Privacy policy</p>
+                <h1>Your clipboard stays on your PC.</h1>
+                <p class="lede">ClipNest is local-only. This policy explains what it stores, where it stores it, what it never does, and which controls are yours.</p>
+                <span class="page-date">Last updated October 16, 2026</span>
+            </div>
+        </section>
 
-            <section class="container document-layout">
-                <aside class="toc" aria-label="Privacy policy contents">
-                    <h3>On this page</h3>
-                    <a href="#sensitive">Sensitive clipboard data</a>
-                    <a href="#collect">What ClipNest stores</a>
-                    <a href="#local">Local storage</a>
-                    <a href="#google">Google sync</a>
-                    <a href="#not-do">What ClipNest does not do</a>
-                    <a href="#startup">Startup integration</a>
-                    <a href="#controls">Your controls</a>
-                    <a href="#retention">Retention and deletion</a>
-                    <a href="#contact">Contact</a>
-                </aside>
+        <section class="doc">
+            <div class="wrap doc-layout">
+                <nav class="toc" aria-label="On this page"><h2>On this page</h2><a href="#sensitive">Sensitive data</a><a href="#stored">What is stored</a><a href="#local">Where it's stored</a><a href="#network">What ClipNest doesn't do</a><a href="#startup">Startup and shortcut</a><a href="#controls">Your controls</a><a href="#retention">Retention</a><a href="#contact">Contact</a></nav>
+                <div class="doc-body">
+                    <section id="sensitive"><h2>Clipboard history can be sensitive</h2><p>ClipNest stores clipboard history so you can search and paste items later. That history can include passwords, one-time codes, payment details, health data, work documents, screenshots, and private messages.</p><aside class="warn"><div class="warn-mark"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg></div><div><h3>ClipNest records everything you copy.</h3><p>That includes text copied from password managers. Use <strong>Pause Capture</strong> (tray menu or Settings) before copying anything you don't want kept, and delete entries or clear history afterward if needed.</p></div></aside></section>
+                    <section id="stored"><h2>What ClipNest stores</h2><p>ClipNest stores clipboard history on your device only. Depending on what you copy, it may store:</p><ul><li>plain text</li><li>rich text and HTML</li><li>copied file lists</li><li>image thumbnails and saved image files</li><li>app settings</li></ul></section>
+                    <section id="local"><h2>Where it's stored</h2><p>ClipNest stores data under your local app data folder:</p><ul><li><code>%LocalAppData%\ClipNest\history.json</code></li><li><code>%LocalAppData%\ClipNest\Images\</code></li><li><code>%LocalAppData%\ClipNest\settings.json</code></li><li><code>%LocalAppData%\ClipNest\error.log</code>, <code>crash.log</code>, and <code>lifecycle.log</code></li></ul><p>Clipboard history, saved images, and local diagnostic logs are not encrypted by ClipNest. They are readable by software running as your Windows account. Diagnostic logs record errors and application lifecycle events, not clipboard contents.</p></section>
+                    <section id="network"><h2>What ClipNest does not do</h2><p>ClipNest does not upload clipboard contents anywhere. Your history is never sent to ClipNest or to anyone else.</p><ul class="never-inline"><li><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg>No accounts or sign-in</li><li><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg>No cloud sync</li><li><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg>No upload</li><li><svg class="icon" aria-hidden="true"><use href="#i-x"/></svg>No analytics or telemetry</li></ul></section>
+                    <section id="startup"><h2>Startup and keyboard shortcut</h2><p>If you enable Run on Startup, ClipNest uses the Windows startup mechanism available for your install type:</p><ul><li>packaged MSIX installs request a Windows startup task</li><li>classic installs use a per-user startup entry under <code>HKCU\Software\Microsoft\Windows\CurrentVersion\Run</code></li></ul><p>ClipNest registers a global keyboard shortcut (<span class="keys"><kbd>Ctrl</kbd><span>+</span><kbd>Shift</kbd><span>+</span><kbd>V</kbd></span>, or <span class="keys"><kbd>Ctrl</kbd><span>+</span><kbd>Alt</kbd><span>+</span><kbd>V</kbd></span> if that is taken) to open its panel. Windows tells ClipNest only when that exact combination is pressed; ClipNest does not monitor or record your other keystrokes.</p></section>
+                    <section id="controls"><h2>Your controls</h2><p>You can:</p><ul><li>pause capture</li><li>delete individual entries</li><li>clear unpinned items, images, duplicates, older items, or all history</li><li>turn off Run on Startup</li><li>choose whether to delete local history and settings during uninstall</li></ul></section>
+                    <section id="retention"><h2>Retention and deletion</h2><p>Items stay in your local history until you delete them, clear history, or ClipNest removes the oldest unpinned items to stay within its limits of 500 entries and about 100 MB of unpinned history. Pinned items are kept.</p><p>When you uninstall, ClipNest asks whether to keep or permanently delete your history and settings. The default is to keep them.</p></section>
+                    <section id="contact"><h2>Contact</h2><p>Send privacy questions to <a href="mailto:ethanmiller122804@gmail.com">ethanmiller122804@gmail.com</a>. The <a href="support.html">support page</a> has current release information.</p></section>
 
-                <div>
-                    <article class="doc-card" id="sensitive">
-                        <h2>Clipboard history can contain sensitive data</h2>
-                        <p>
-                            ClipNest may store passwords, one-time codes, payment details, health information, work documents,
-                            screenshots, and private messages if they are copied to the clipboard.
-                        </p>
-                        <p>
-                            ClipNest does not currently auto-exclude password managers or other sensitive apps. If you copy passwords,
-                            security codes, payment details, or regulated data, pause capture first and clear history afterward if needed.
-                        </p>
-                    </article>
-
-                    <article class="doc-card" id="collect">
-                        <h2>What ClipNest stores</h2>
-                        <p>Depending on what you copy and which features you enable, ClipNest may store:</p>
-                        <ul>
-                            <li>plain text</li>
-                            <li>rich text / HTML</li>
-                            <li>copied file lists</li>
-                            <li>image thumbnails and saved image files</li>
-                            <li>app settings</li>
-                            <li>connected Google account metadata and protected refresh tokens used for sync</li>
-                        </ul>
-                    </article>
-
-                    <article class="doc-card" id="local">
-                        <h2>How local storage works</h2>
-                        <p>ClipNest stores clipboard history locally on your Windows device. Current local storage paths include:</p>
-                        <ul>
-                            <li><code>%LocalAppData%\ClipNest\history.json</code></li>
-                            <li><code>%LocalAppData%\ClipNest\Images\</code></li>
-                            <li><code>%LocalAppData%\ClipNest\settings.json</code></li>
-                            <li><code>%LocalAppData%\ClipNest\Accounts\</code></li>
-                        </ul>
-                    </article>
-
-                    <article class="doc-card" id="google">
-                        <h2>How Google sync works</h2>
-                        <p>
-                            If you choose to sign in with Google, ClipNest uses your Google Drive app data folder to sync eligible clipboard
-                            history between devices running ClipNest with the same Google account.
-                        </p>
-                        <p>Google sync currently includes:</p>
-                        <ul>
-                            <li>plain text</li>
-                            <li>rich text / HTML</li>
-                            <li>pinned state</li>
-                            <li>image files used by synced entries</li>
-                        </ul>
-                        <p>
-                            Copied file lists are device-specific and may remain local-only because those paths may not exist on another device.
-                        </p>
-                        <p>
-                            Removing a Google account from ClipNest on one device removes the local saved account for that install. It does not
-                            automatically delete synced data already stored in that Google account's Drive app data folder.
-                        </p>
-                    </article>
-
-                    <article class="doc-card" id="not-do">
-                        <h2>What ClipNest does not do</h2>
-                        <p>ClipNest does not upload clipboard contents to a ClipNest-operated server.</p>
-                        <p>Google sync is optional. You can use ClipNest locally without signing in.</p>
-                    </article>
-
-                    <article class="doc-card" id="startup">
-                        <h2>Startup and system integration</h2>
-                        <p>
-                            If you enable Run on Startup, ClipNest uses the Windows startup mechanism available for your install type.
-                            Packaged MSIX installs request a Windows startup task. Classic installs use a per-user startup entry under
-                            <code>HKCU\Software\Microsoft\Windows\CurrentVersion\Run</code>.
-                        </p>
-                    </article>
-
-                    <article class="doc-card" id="controls">
-                        <h2>Your controls</h2>
-                        <p>You can:</p>
-                        <ul>
-                            <li>pause clipboard capture</li>
-                            <li>delete individual entries</li>
-                            <li>clear unpinned history or all history</li>
-                            <li>remove a connected Google account from the device</li>
-                            <li>turn off Run on Startup</li>
-                        </ul>
-                    </article>
-
-                    <article class="doc-card" id="retention">
-                        <h2>Retention and deletion</h2>
-                        <p>
-                            Clipboard items remain in local history until you delete them, clear history, or ClipNest removes older unpinned items
-                            to stay within its local history and storage limits.
-                        </p>
-                        <p>
-                            When Google sync is enabled, synced item records may remain in your Google account until they are removed by the app's
-                            sync process or you remove the associated app data from your Google account.
-                        </p>
-                    </article>
-
-                    <article class="doc-card" id="contact">
-                        <h2>Contact</h2>
-                        <p>For support or privacy questions, contact <a href="mailto:ethanmiller122804@gmail.com">ethanmiller122804@gmail.com</a>.</p>
-                        <p class="legal-note">Use this same contact email on your Google OAuth consent screen so the public site and Google app stay aligned.</p>
-                    </article>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="container footer-grid footer-card">
-                <div>
-                    <div class="brand">
-                        <img src="assets/clipnest-logo.png" alt="ClipNest logo">
-                        <span class="brand-text">
-                            <strong>ClipNest</strong>
-                            <span>Clipboard history for Windows</span>
-                        </span>
-                    </div>
-                    <p class="small-note" style="margin-top:0.9rem;">
-                        Local-first clipboard history with optional Google sync through your own Google Drive app data folder.
-                    </p>
-                </div>
-                <div>
-                    <h3>Pages</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="support.html">Support</a></li>
-                        <li><a href="terms.html">Terms of Use</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><a href="mailto:ethanmiller122804@gmail.com">ethanmiller122804@gmail.com</a></li>
-                    </ul>
-                    <p class="legal-note">Use this same contact email on your Google OAuth consent screen so the public site and Google app stay aligned.</p>
                 </div>
             </div>
-        </footer>
-    </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-main">
+            <div class="footer-brand">
+                <a class="wordmark" href="index.html"><img src="assets/clipnest-logo.png" alt="" width="32" height="32"><span>ClipNest</span></a>
+                <p>Clipboard history for Windows. Local only: no accounts, no upload, no telemetry.</p>
+            </div>
+            <div class="footer-col"><h2>Product</h2><a href="index.html#features">Features</a><a href="index.html#privacy">Privacy</a><a href="index.html#whats-new">What's new</a><a href="index.html#download">Download</a></div>
+            <div class="footer-col"><h2>Help</h2><a href="support.html">Support</a><a href="mailto:ethanmiller122804@gmail.com">Contact</a></div>
+            <div class="footer-col"><h2>Legal</h2><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></div>
+        </div>
+        <div class="wrap footer-bottom"><span>&copy; 2026 ClipNest</span><span>Version 1.2.0 for Windows 10 and 11</span></div>
+    </footer>
 </body>
 </html>

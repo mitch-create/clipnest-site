@@ -1,153 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="no-js">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ClipNest Support</title>
-    <meta name="description" content="Support and contact information for ClipNest.">
+    <title>Support | ClipNest</title>
+    <meta name="description" content="Help with installing and using ClipNest: the global shortcut, pausing capture, SmartScreen, storage, and contact details.">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f7f6f2" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0d1113" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" href="assets/favicon-64.png">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="site-shell">
-        <div class="topbar">
-            <div class="container">
-                <nav class="nav" aria-label="Main navigation">
-                    <a class="brand" href="index.html">
-                        <img src="assets/clipnest-logo.png" alt="ClipNest logo">
-                        <span class="brand-text">
-                            <strong>ClipNest</strong>
-                            <span>Windows clipboard history with optional Google sync</span>
-                        </span>
-                    </a>
-                    <div class="nav-links">
-                        <a href="index.html">Home</a>
-                        <a href="privacy.html">Privacy</a>
-                        <a class="active" href="support.html">Support</a>
-                        <a href="terms.html">Terms</a>
-                    </div>
-                </nav>
-            </div>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4.5-4.5M12 15l-4.5-4.5M5 19.5h14"/></symbol><symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></symbol><symbol id="i-pin" viewBox="0 0 24 24"><path d="m14 4 6 6-3 1-4 4-1 5-3-3-4 4-1-1 4-4-3-3 5-1 4-4z"/></symbol><symbol id="i-trash" viewBox="0 0 24 24"><path d="M5 7h14M10 7V5h4v2M7 7l1 12h8l1-12"/></symbol><symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2.8v2.6M12 18.6v2.6M2.8 12h2.6M18.6 12h2.6M5.5 5.5l1.8 1.8M16.7 16.7l1.8 1.8M5.5 18.5l1.8-1.8M16.7 7.3l1.8-1.8"/></symbol><symbol id="i-min" viewBox="0 0 24 24"><path d="M7 12h10"/></symbol><symbol id="i-max" viewBox="0 0 24 24"><rect x="7" y="7" width="10" height="10" rx="1"/></symbol><symbol id="i-x" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7 7 17"/></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol><symbol id="i-file" viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5"/></symbol><symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m5 18 5-5 3 3 2-2 4 4"/></symbol><symbol id="i-text" viewBox="0 0 24 24"><path d="M5 6h14M12 6v13M9 19h6"/></symbol><symbol id="i-rich" viewBox="0 0 24 24"><path d="M7 5h5.5a3.5 3.5 0 0 1 0 7H7zM7 12h6.5a3.5 3.5 0 0 1 0 7H7z"/></symbol><symbol id="i-tag" viewBox="0 0 24 24"><path d="M3.5 12.5V4.5a1 1 0 0 1 1-1h8l8.5 8.5-9 9z"/><circle cx="8" cy="8" r="1.3"/></symbol><symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3.5l1.8 5.2 5.2 1.8-5.2 1.8-1.8 5.2-1.8-5.2-5.2-1.8 5.2-1.8zM18.5 15.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></symbol><symbol id="i-tray" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 15h5l1.5 2h5L16 15h5"/></symbol><symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3.5 2.5 20h19z"/><path d="M12 10v4.5M12 17.2v.1"/></symbol><symbol id="i-copy" viewBox="0 0 24 24"><rect x="8.5" y="8.5" width="11.5" height="11.5" rx="2"/><path d="M15.5 8.5V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v9.5a1 1 0 0 0 1 1h3.5"/></symbol><symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></symbol><symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol><symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5"/></symbol><symbol id="i-monitor" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></symbol><symbol id="i-keyboard" viewBox="0 0 24 24"><rect x="2.5" y="6" width="19" height="12" rx="2"/><path d="M6.5 10h.01M10 10h.01M14 10h.01M17.5 10h.01M7.5 14h9"/></symbol></svg>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="wordmark" href="index.html" aria-label="ClipNest home"><img src="assets/clipnest-logo.png" alt="" width="32" height="32"><span>ClipNest</span></a>
+            <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Open menu</span><span class="bars" aria-hidden="true"><span></span><span></span><span></span></span></button>
+            <nav class="site-nav" id="site-nav" aria-label="Main">
+                <a href="index.html#features">Features</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="support.html" aria-current="page">Support</a>
+                <a class="nav-download" href="index.html#download">Download</a>
+            </nav>
         </div>
+    </header>
 
-        <main>
-            <section class="page-hero">
-                <div class="container">
-                    <div class="eyebrow">ClipNest Support</div>
-                    <h1>Support and contact</h1>
-                    <p>
-                        Need help with sync, setup, or privacy questions? Use the details below when contacting support so issues can be reproduced faster.
-                    </p>
-                </div>
-            </section>
+    <main id="main">
+        <section class="page-hero">
+            <div class="wrap">
+                <p class="eyebrow">Support</p>
+                <h1>How can we help?</h1>
+                <p class="lede">Most questions are answered below. If something still isn't right, send an email with a few details.</p>
+            </div>
+        </section>
 
-            <section class="section">
-                <div class="container support-grid">
-                    <div class="panel">
-                        <h2 style="margin-top:0;">Contact</h2>
-                        <p>Email: <a href="mailto:ethanmiller122804@gmail.com">ethanmiller122804@gmail.com</a></p>
-                        <p class="legal-note">Use this same email for your Google OAuth support contact so the public site and consent screen match.</p>
-
-                        <h3>Include these details in bug reports</h3>
-                        <ul>
-                            <li>what you copied or tried to do</li>
-                            <li>whether Google sync was enabled</li>
-                            <li>whether the problem happened on one device or more than one</li>
-                            <li>the exact status text shown in ClipNest Settings</li>
-                            <li>whether the item was text, rich text, image, or file list</li>
+        <section class="doc">
+            <div class="wrap">
+                <div class="support-grid">
+                    <article class="card card-contact">
+                        <h2>Contact support</h2>
+                        <p>Describe what happened and what you expected. These details help:</p>
+                        <ul class="checklist">
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Your ClipNest version (shown in Settings) and Windows version</li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>The item type involved: text, rich text, image, or file list</li>
+                            <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>The exact error or status message, if there was one</li>
                         </ul>
-                    </div>
-
-                    <div class="panel">
-                        <h2 style="margin-top:0;">Current product details</h2>
-                        <ul>
-                            <li>Platform: Windows desktop</li>
-                            <li>Storage model: local-first</li>
-                            <li>Sync provider: Google Drive app data folder</li>
-                            <li>ClipNest-operated clipboard server: none</li>
-                        </ul>
-                    </div>
+                        <a class="contact-email" href="mailto:ethanmiller122804@gmail.com"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>ethanmiller122804@gmail.com</a>
+                    </article>
+                    <article class="card">
+                        <h2>Current release</h2>
+                        <dl class="facts">
+                            <div><dt>Version</dt><dd>1.2.0</dd></div>
+                            <div><dt>Windows</dt><dd>10 (1809+) or 11</dd></div>
+                            <div><dt>Architecture</dt><dd>x64, ARM64 on Windows 11</dd></div>
+                            <div><dt>Shortcut</dt><dd>Ctrl+Shift+V</dd></div>
+                            <div><dt>Storage</dt><dd>On this PC only</dd></div>
+                        </dl>
+                        <a class="text-link" href="index.html#download" style="margin-top:14px">Download 1.2.0 <svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                    </article>
                 </div>
-            </section>
 
-            <section class="section">
-                <div class="container">
-                    <div class="section-heading">
-                        <h2>Common questions</h2>
-                        <p>Short answers to the issues most likely to come up during setup and daily use.</p>
-                    </div>
-
-                    <div class="feature-grid">
-                        <div class="card">
-                            <h3>Why does sync take a few seconds?</h3>
-                            <p>
-                                ClipNest syncs through Google Drive app data, not a realtime push backend. Local capture happens first,
-                                then ClipNest syncs eligible changes in the background.
-                            </p>
-                        </div>
-                        <div class="card">
-                            <h3>Why did a copied file list not appear on another PC?</h3>
-                            <p>
-                                File lists can be device-specific because the target paths may only exist on the machine where they were copied.
-                                Those entries may remain local-only.
-                            </p>
-                        </div>
-                        <div class="card">
-                            <h3>Can I use ClipNest without Google?</h3>
-                            <p>Yes. Google sign-in is optional. ClipNest works as a local clipboard manager without any account.</p>
-                        </div>
-                        <div class="card">
-                            <h3>What should I do before copying sensitive data?</h3>
-                            <p>
-                                Pause capture first. ClipNest does not currently auto-exclude password managers or other sensitive apps.
-                            </p>
-                        </div>
-                        <div class="card">
-                            <h3>Where is the local data stored?</h3>
-                            <p>ClipNest stores history, settings, and related files under your Windows local app data folder.</p>
-                        </div>
-                        <div class="card">
-                            <h3>What if Google sign-in fails?</h3>
-                            <p>
-                                Open ClipNest Settings and note the exact sync status text. Include that message in your support request.
-                            </p>
-                        </div>
-                    </div>
+                <div class="section-head">
+                    <p class="eyebrow">Common questions</p>
+                    <h2>Quick answers</h2>
                 </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="container footer-grid footer-card">
-                <div>
-                    <div class="brand">
-                        <img src="assets/clipnest-logo.png" alt="ClipNest logo">
-                        <span class="brand-text">
-                            <strong>ClipNest</strong>
-                            <span>Clipboard history for Windows</span>
-                        </span>
-                    </div>
-                    <p class="small-note" style="margin-top:0.9rem;">
-                        Local-first clipboard history with optional Google sync through your own Google Drive app data folder.
-                    </p>
-                </div>
-                <div>
-                    <h3>Pages</h3>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Use</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Contact</h3>
-                    <ul>
-                        <li><a href="mailto:ethanmiller122804@gmail.com">ethanmiller122804@gmail.com</a></li>
-                    </ul>
-                    <p class="legal-note">Use this same email for your Google OAuth support contact so the public site and consent screen match.</p>
+                <div class="faq">
+                    <details open><summary>How do I open ClipNest?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="answer"><p>Press <span class="keys"><kbd>Ctrl</kbd><span>+</span><kbd>Shift</kbd><span>+</span><kbd>V</kbd></span> from any app. If another app already uses that shortcut, ClipNest uses <span class="keys"><kbd>Ctrl</kbd><span>+</span><kbd>Alt</kbd><span>+</span><kbd>V</kbd></span> instead. You can also click the ClipNest icon in the system tray.</p></div></details>
+                    <details><summary>The shortcut doesn't do anything.<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="answer"><p>Open Settings, or hover over the tray icon, to see which shortcut is active. If both shortcuts are already taken by other apps, Settings says so; open ClipNest from the tray icon instead, or close the app that owns the shortcut and restart ClipNest.</p></div></details>
+                    <details><summary>How do I keep passwords out of my history?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="answer"><p>ClipNest records everything you copy, including text from password managers. Turn on <strong>Pause Capture</strong> in the tray menu (or <strong>Pause clipboard capture</strong> in Settings) before you copy something sensitive, then turn it off again.</p><p>If something was already saved, delete that entry or clear history.</p></div></details>
+                    <details><summary>Does ClipNest sync between PCs or need an account?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="answer"><p>No. Since version 1.2.0, ClipNest is local-only: no accounts, no sign-in, and no cloud sync. Each PC keeps its own history, and nothing is uploaded.</p></div></details>
+                    <details><summary>Windows SmartScreen warned me about the installer.<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="answer"><p>The installer isn't code-signed yet, so SmartScreen may say it comes from an unknown publisher. Choose <strong>More info</strong>, then <strong>Run anyway</strong>.</p><p>To confirm your download is intact, run <code>Get-FileHash .\ClipNest_Setup.exe</code> in PowerShell and compare the result with the checksum on the <a href="index.html#download">download section</a>.</p></div></details>
+                    <details><summary>I closed the window. Is ClipNest still running?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="answer"><p>Yes. Closing the panel keeps ClipNest running in the system tray so it can keep capturing. To stop it completely, right-click the tray icon and choose <strong>Exit</strong>.</p></div></details>
+                    <details><summary>How much history does ClipNest keep?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="answer"><p>Up to 500 entries and about 100 MB of unpinned history. When it reaches a limit, the oldest unpinned items are removed first. Pinned items are kept.</p></div></details>
+                    <details><summary>Where does ClipNest store my data?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="answer"><p>Under <code>%LocalAppData%\ClipNest\</code> on your PC. The <a href="privacy.html#local">privacy policy</a> lists each file.</p></div></details>
+                    <details><summary>What happens to my history when I uninstall?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary><div class="answer"><p>The uninstaller asks whether to keep or permanently delete your history and settings. The default is to keep them.</p></div></details>
                 </div>
             </div>
-        </footer>
-    </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap footer-main">
+            <div class="footer-brand">
+                <a class="wordmark" href="index.html"><img src="assets/clipnest-logo.png" alt="" width="32" height="32"><span>ClipNest</span></a>
+                <p>Clipboard history for Windows. Local only: no accounts, no upload, no telemetry.</p>
+            </div>
+            <div class="footer-col"><h2>Product</h2><a href="index.html#features">Features</a><a href="index.html#privacy">Privacy</a><a href="index.html#whats-new">What's new</a><a href="index.html#download">Download</a></div>
+            <div class="footer-col"><h2>Help</h2><a href="support.html">Support</a><a href="mailto:ethanmiller122804@gmail.com">Contact</a></div>
+            <div class="footer-col"><h2>Legal</h2><a href="privacy.html">Privacy policy</a><a href="terms.html">Terms of use</a></div>
+        </div>
+        <div class="wrap footer-bottom"><span>&copy; 2026 ClipNest</span><span>Version 1.2.0 for Windows 10 and 11</span></div>
+    </footer>
 </body>
 </html>
